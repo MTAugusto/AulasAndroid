@@ -90,6 +90,10 @@ public class MainActivity extends AppCompatActivity {
             CharSequence text = "Informe o segundo Valor";
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
+        } if(op.equals("") || op.equals(null)){
+            CharSequence text = "Informe o uma Operacao";
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
         } else {
 
             Intent mudatela = new Intent(MainActivity.this, SegundaTela.class);
